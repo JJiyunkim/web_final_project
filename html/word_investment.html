@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/word.css">
+  <title>금융 목표 달성 도우미 - CASH.ver</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/logo.png" alt="Cash.ver 로고" class="logo">
+    </a>
+    <nav>
+      <a href="tip.html">금융 tip 🚀</a>
+      <a href="word_all.html">금융 용어 🧑🏻‍🏫</a>
+      <a href="product_comparison.html">나에게 맞는 금융 상품 찾기 🔎</a>
+      <a href="quiz.html">QUIZ 🎯</a>
+    </nav>
+  </header>
+  <main class="words">
+    <section class="word-section">
+      <div class="word-header">
+        <h1>금융 용어</h1>
+        <p>실생활에서 자주 쓰이지만 헷갈리는 금융 용어들을 찾아보세요!</p>
+      </div>
+      <div class="word-categories">
+        <button class="category" onclick="window.location.href='word_all.html'">전체</button>
+        <button class="category" onclick="window.location.href='word_saving.html'">저축</button>
+        <button class="category active" data-category="investment">투자</button>
+        <button class="category" onclick="window.location.href='word_loan.html'">대출</button>
+        <button class="category" onclick="window.location.href='word_credit.html'">신용</button>
+      </div>
+      <div class="word-list">
+        <div class="word-card" data-category="investment">
+          <h2>CMA</h2>
+          <p>예탁금을 어음이나 채권등에 투자하여 그 수익을 고객에게 돌려주는 상품으로 은행 보통 예금처럼 수시 입출금이 가능하고 소액으로도 투자가 가능하다.</p>
+        </div>
+        <div class="word-card" data-category="investment">
+          <h2>증권신고서</h2>
+          <p>증권을 모집 또는 매출할 때에 금융위원회에 제출해야 하는 서류로서 모집 또는 매출에 관한 사항, 발행인에 관한 사항 등을 기재해야 한다.</p>
+        </div>
+        <div class="word-card" data-category="investment">
+          <h2>배당금</h2>
+          <p>기업이 이익을 발생시켜 회사내에 누적하여 온 이익잉여금의 일부를 기업의 소유주에게 분배하는 것을 말한다.</p>
+        </div>
+        <div class="word-card" data-category="investment">
+          <h2>비상장 기업</h2>
+          <p>증권 시장에 상장하지 않은 기업으로, 상장 기업에 가해지는 여러 의무가 적다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    ©2024 CASH.ver. ALL RIGHTS RESERVED. <br>
+    이름 : 김지윤 | 학번 : 2021311677
+  </footer>
+  <script src="../js/word.js"></script>
+</body>
+</html>

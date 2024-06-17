@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/word.css">
+  <title>금융 목표 달성 도우미 - CASH.ver</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/logo.png" alt="Cash.ver 로고" class="logo">
+    </a>
+    <nav>
+      <a href="tip.html">금융 tip 🚀</a>
+      <a href="word_all.html">금융 용어 🧑🏻‍🏫</a>
+      <a href="product_comparison.html">나에게 맞는 금융 상품 찾기 🔎</a>
+      <a href="quiz.html">QUIZ 🎯</a>
+    </nav>
+  </header>
+  <main class="words">
+    <section class="word-section">
+      <div class="word-header">
+        <h1>금융 용어</h1>
+        <p>실생활에서 자주 쓰이지만 헷갈리는 금융 용어들을 찾아보세요!</p>
+      </div>
+      <div class="word-categories">
+        <button class="category" onclick="window.location.href='word_all.html'">전체</button>
+        <button class="category" onclick="window.location.href='word_saving.html'">저축</button>
+        <button class="category" onclick="window.location.href='word_investment.html'">투자</button>
+        <button class="category active" data-category="loan">대출</button>
+        <button class="category" onclick="window.location.href='word_credit.html'">신용</button>
+      </div>
+      <div class="word-list">
+        <div class="word-card" data-category="loan">
+          <h2>무담보 대출</h2>
+          <p>담보물을 제공하지 않고 대출을 받는 형태의 대출로, 대출 신청자의 신용평가와 수입 등을 기반으로 대출 여부와 대출 금리가 결정된다.</p>
+        </div>
+        <div class="word-card" data-category="loan">
+          <h2>연체이자</h2>
+          <p>대출금을 기일 내에 상환하지 않을 경우 부과되는 연체료 또는 연체이자입니다. 연체 기간이 늘어날수록 더 많은 금액이 부과된다.</p>
+        </div>
+        <div class="word-card" data-category="loan">
+          <h2>선불상환</h2>
+          <p>대출 상환 기간 동안 원금을 일찍 갚는 것을 말합니다. 이로 인해 이자 비용을 절감할 수 있다.</p>
+        </div>
+        <div class="word-card" data-category="loan">
+          <h2>원금 균등 분활 상환</h2>
+          <p>대출 원금 전체를 대출 기간 내 일정한 금액으로 상환하는 것을 의미한다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    ©2024 CASH.ver. ALL RIGHTS RESERVED. <br>
+    이름 : 김지윤 | 학번 : 2021311677
+  </footer>
+  <script src="../js/word.js"></script>
+</body>
+</html>

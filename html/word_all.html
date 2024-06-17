@@ -13,7 +13,7 @@
     </a>
     <nav>
       <a href="tip.html">금융 tip 🚀</a>
-      <a href="money_word.html">금융 용어 🧑🏻‍🏫</a>
+      <a href="word_all.html">금융 용어 🧑🏻‍🏫</a>
       <a href="product_comparison.html">나에게 맞는 금융 상품 찾기 🔎</a>
       <a href="quiz.html">QUIZ 🎯</a>
     </nav>
@@ -25,101 +25,88 @@
         <p>실생활에서 자주 쓰이지만 헷갈리는 금융 용어들을 찾아보세요!</p>
       </div>
       <div class="word-categories">
-        <button class="category active" data-category="all">전체</button>
-        <button class="category" data-category="saving">저축</button>
-        <button class="category" data-category="investment">투자</button>
-        <button class="category" data-category="loan">대출</button>
-        <button class="category" data-category="credit">신용</button>
+        <button class="category active" data-category="all">전체</button> <!--click 했을 때 수정해야할듯-->
+        <button class="category" onclick="window.location.href='word_saving.html'">저축</button>
+        <button class="category" onclick="window.location.href='word_investment.html'">투자</button>
+        <button class="category" onclick="window.location.href='word_loan.html'">대출</button>
+        <button class="category" onclick="window.location.href='word_credit.html'">신용</button>
       </div>
       <div class="word-list">
+        <!-- All word cards here -->
+        <!-- Saving -->
         <div class="word-card" data-category="saving">
             <h2>기본예탁금</h2>
             <p>위험 감수능력 등을 갖춘 투자자에 한해 시장참여가 가능하도록, 코넥스 시장에서 주식을 매수하려는 투자자에 대해 일정 금액(현행 3천만원) 이상을 예탁하도록 하는 제도이다.</p>
         </div>
-
         <div class="word-card" data-category="saving">
           <h2>휴면 예금</h2>
           <p>은행 및 우체국의 요구불 예금, 저축성 예금 중에서 관련 법률에 의해 청구권의 소멸시효(은행예금 5년, 우체국예금 10년)가 완성된 이후에 찾아가지 않은 예금이다.</p>
         </div>
-
         <div class="word-card" data-category="saving">
           <h2>단리</h2>
           <p>원금에 대해서만 약정된 이율로 이자가 발생하는 금리 계산식이다.</p>
         </div>
-
         <div class="word-card" data-category="saving">
           <h2>복리</h2>
           <p>이자가 원금에 가산되고 약정한 이율이 적용되어 이자에 또 이자가 붙게 되는 방식이지만 대부분 상품이 중도해지 시 위약금이 커 가입 시 신중하게 선택해야한다.</p>
         </div>
-
         <div class="word-card" data-category="saving">
           <h2>당좌예금</h2>
           <p>기업이 은행과 당좌거래 계약을 맺고 은행에 현금을 입금하여 현금을 보관하게 하고 필요 시 당좌수표를 발행하여 현금을 인출할 수 있는 무이자의 예금을 말한다.기업이 은행과 당좌거래 계약을 맺고 은행에 현금을 입금하여 현금을 보관하게 하고 필요 시 당좌수표를 발행하여 현금을 인출할 수 있는 무이자의 예금을 말한다. </p>
         </div>
-
+        <!-- Investment -->
         <div class="word-card" data-category="investment">
           <h2>CMA</h2>
           <p>예탁금을 어음이나 채권등에 투자하여 그 수익을 고객에게 돌려주는 상품으로 은행 보통 예금처럼 수시 입출금이 가능하고 소액으로도 투자가 가능하다.</p>
         </div>
-
         <div class="word-card" data-category="investment">
           <h2>증권신고서</h2>
           <p>증권을 모집 또는 매출할 때에 금융위원회에 제출해야 하는 서류로서 모집 또는 매출에 관한 사항, 발행인에 관한 사항 등을 기재해야 한다.</p>
         </div>
-
         <div class="word-card" data-category="investment">
           <h2>배당금</h2>
           <p>기업이 이익을 발생시켜 회사내에 누적하여 온 이익잉여금의 일부를 기업의 소유주에게 분배하는 것을 말한다.</p>
         </div>
-
         <div class="word-card" data-category="investment">
           <h2>비상장 기업</h2>
           <p>증권 시장에 상장하지 않은 기업으로, 상장 기업에 가해지는 여러 의무가 적다.</p>
         </div>
-
+        <!-- Loan -->
         <div class="word-card" data-category="loan">
           <h2>무담보 대출</h2>
           <p>담보물을 제공하지 않고 대출을 받는 형태의 대출로, 대출 신청자의 신용평가와 수입 등을 기반으로 대출 여부와 대출 금리가 결정된다.</p>
         </div>
-
         <div class="word-card" data-category="loan">
           <h2>연체이자</h2>
           <p>대출금을 기일 내에 상환하지 않을 경우 부과되는 연체료 또는 연체이자입니다. 연체 기간이 늘어날수록 더 많은 금액이 부과된다.</p>
         </div>
-
         <div class="word-card" data-category="loan">
           <h2>선불상환</h2>
           <p>대출 상환 기간 동안 원금을 일찍 갚는 것을 말합니다. 이로 인해 이자 비용을 절감할 수 있다.</p>
         </div>
-
         <div class="word-card" data-category="loan">
           <h2>원금 균등 분활 상환</h2>
           <p>대출 원금 전체를 대출 기간 내 일정한 금액으로 상환하는 것을 의미한다.</p>
         </div>
-
+        <!-- Credit -->
         <div class="word-card" data-category="credit">
           <h2>개인신용등급</h2>
           <p>개인신용등급은 개인신용 평가회사(Credit Bureau, 흔히 CB사라 함)가 개인의 여러 가지 신용정보를 수집하여 1등급에서부터 10등급까지 분류한 신용등급이다.</p>
         </div>
-
         <div class="word-card" data-category="credit">
           <h2>신용회복제도</h2>
-          <p>신용회복제도는 과도한 부채로 파산의 위기를 맞은 사람들을 돕는 제도이다.
-            구체적으로 채무자의 상환기간 연장, 분할상환, 변제 유예, 이자율조정, 채무조정 등의 수단을 통하여 채무자가 경제적으로 회생할 수 있도록 돕고 있다.</p>
+          <p>신용회복제도는 과도한 부채로 파산의 위기를 맞은 사람들을 돕는 제도이다. 구체적으로 채무자의 상환기간 연장, 분할상환, 변제 유예, 이자율조정, 채무조정 등의 수단을 통하여 채무자가 경제적으로 회생할 수 있도록 돕고 있다.</p>
         </div>
         <div class="word-card" data-category="credit">
           <h2>개인회생제도</h2>
           <p>고정소득이 있는 월급생활자, 소규모 자영업자 그리고 전문직 종사자로서 과도한 부채로 인하여 고통을 받는 사람들이 최고 5년 동안 성실하게 빚을 갚으면 나머지 채무를 탕감해 주는 제도이다.</p>
         </div>
-    
         <div class="word-card" data-category="credit">
           <h2>신용 보고서</h2>
           <p>개인이나 기업의 금융 거래 내역, 대출 상환 기록 등을 요약한 보고서로, 신용평가기관이 등급을 책정할 때 참고하는 자료 중 하나이다.</p>
         </div>
-
       </div>
     </section>
-
   </main>
   <footer>
     ©2024 CASH.ver. ALL RIGHTS RESERVED. <br>

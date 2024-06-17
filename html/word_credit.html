@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/word.css">
+  <title>금융 목표 달성 도우미 - CASH.ver</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/logo.png" alt="Cash.ver 로고" class="logo">
+    </a>
+    <nav>
+      <a href="tip.html">금융 tip 🚀</a>
+      <a href="word_all.html">금융 용어 🧑🏻‍🏫</a>
+      <a href="product_comparison.html">나에게 맞는 금융 상품 찾기 🔎</a>
+      <a href="quiz.html">QUIZ 🎯</a>
+    </nav>
+  </header>
+  <main class="words">
+    <section class="word-section">
+      <div class="word-header">
+        <h1>금융 용어</h1>
+        <p>실생활에서 자주 쓰이지만 헷갈리는 금융 용어들을 찾아보세요!</p>
+      </div>
+      <div class="word-categories">
+        <button class="category" onclick="window.location.href='word_all.html'">전체</button>
+        <button class="category" onclick="window.location.href='word_saving.html'">저축</button>
+        <button class="category" onclick="window.location.href='word_investment.html'">투자</button>
+        <button class="category" onclick="window.location.href='word_loan.html'">대출</button>
+        <button class="category active" data-category="credit">신용</button>
+      </div>
+      <div class="word-list">
+        <div class="word-card" data-category="credit">
+          <h2>개인신용등급</h2>
+          <p>개인신용등급은 개인신용 평가회사(Credit Bureau, 흔히 CB사라 함)가 개인의 여러 가지 신용정보를 수집하여 1등급에서부터 10등급까지 분류한 신용등급이다.</p>
+        </div>
+        <div class="word-card" data-category="credit">
+          <h2>신용회복제도</h2>
+          <p>신용회복제도는 과도한 부채로 파산의 위기를 맞은 사람들을 돕는 제도이다.
+            구체적으로 채무자의 상환기간 연장, 분할상환, 변제 유예, 이자율조정, 채무조정 등의 수단을 통하여 채무자가 경제적으로 회생할 수 있도록 돕고 있다.</p>
+        </div>
+        <div class="word-card" data-category="credit">
+          <h2>개인회생제도</h2>
+          <p>고정소득이 있는 월급생활자, 소규모 자영업자 그리고 전문직 종사자로서 과도한 부채로 인하여 고통을 받는 사람들이 최고 5년 동안 성실하게 빚을 갚으면 나머지 채무를 탕감해 주는 제도이다.</p>
+        </div>
+        <div class="word-card" data-category="credit">
+          <h2>신용 보고서</h2>
+          <p>개인이나 기업의 금융 거래 내역, 대출 상환 기록 등을 요약한 보고서로, 신용평가기관이 등급을 책정할 때 참고하는 자료 중 하나이다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    ?2024 CASH.ver. ALL RIGHTS RESERVED. <br>
+    이름 : 김지윤 | 학번 : 2021311677
+  </footer>
+  <script src="../js/word.js"></script>
+</body>
+</html>
