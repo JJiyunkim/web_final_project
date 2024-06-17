@@ -1,0 +1,121 @@
+/*일반적 PC 적용*/
+@import url('menu.css');
+
+body {
+  background-color: #dbf9d0; /* 배경 색 변경 */
+}
+
+header {
+  background-color: white; /* 헤더 부분 배경색을 흰색으로 설정 */
+}
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* 로고 아래 여백 추가 */
+  }
+
+  nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+  }
+}
+  .recommendation-section {
+    max-width: 600px;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form .form-group input,
+  form .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    margin-top: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+  }
+
+  /* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo {
+      margin-bottom: 20px; /* 로고 아래 여백 추가 */
+    }
+  
+    nav {
+      flex-direction: column; /* 세로로 배치 */
+      align-items: center; /* 가운데 정렬 */
+    }
+    
+    nav a {
+      margin: 10px 0; /* 링크 간의 간격 조정 */
+      padding: 10px 20px; /* 패딩 조정 */
+    }
+  }
+  
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    nav a {
+      padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+    }
+  }

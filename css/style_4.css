@@ -1,0 +1,102 @@
+/*일반적 PC 적용*/
+@import url('menu.css');
+
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* 로고 아래 여백 추가 */
+  }
+
+
+  nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+  }
+}
+
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.quiz-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options li:hover {
+  background-color: #ececec;
+}
+
+.piggy-bank-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+#piggy-bank {
+  font-size: 100px;
+  transition: transform 0.3s ease;
+}
+
+#coin-count {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.coin-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.coin {
+  font-size: 50px;
+  cursor: pointer;
+}

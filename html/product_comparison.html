@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/recommendation.css">
+  <title>나에게 맞는 금융 상품은? - CASH.ver</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/logo.png" alt="Cash.ver 로고" class="logo">
+    </a>
+    <nav>
+      <a href="tip.html">금융 tip 🚀</a>
+      <a href="money_word.html">금융 용어 🧑🏻‍🏫</a>
+      <a href="product_comparison.html">나에게 맞는 금융 상품 찾기 🔎</a>
+      <a href="quiz.html">QUIZ 🎯</a>
+    </nav>
+  </header>
+  <main>
+    <section class="recommendation-section">
+      <h1>나에게 맞는 금융 상품은?</h1>
+      <form id="recommendationForm" action="result.html" method="get">
+        <div class="form-group">
+          <label for="age">나이:</label>
+          <input type="number" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+          <label for="income">소득 (월):</label>
+          <input type="number" id="income" name="income" required>
+        </div>
+        <div class="form-group">
+          <label for="goal">재정 목표:</label>
+          <select id="goal" name="goal" required>
+            <option value="saving">저축</option>
+            <option value="investment">투자</option>
+            <option value="loan">대출</option>
+            <option value="retirement">은퇴 계획</option>
+          </select>
+        </div>
+        <button type="submit">추천 받기</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    ©2024 CASH.ver. ALL RIGHTS RESERVED. <br>
+    이름 : 김지윤 | 학번 : 2021311677
+  </footer>
+</body>
+</html>

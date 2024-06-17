@@ -1,0 +1,281 @@
+/*일반적 PC 적용*/
+@import url('menu.css');
+
+
+#info {
+  width: 100%;
+  height: 600px; /* 영역 높이를 늘림 */
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#info_mid { /*추후에 좌우 여백 없앨 예정*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 90px 0;
+    background-color: rgb(247,248,249);
+}
+
+#coin-animation {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  background-color: rgb(247,248,249);
+}
+
+.coin {
+  position: absolute;
+  width: 50px; /* 원하는 코인 너비로 수정 */
+  height: 50px; /* 원하는 코인 높이로 수정 */
+  background-image: url('coin.png'); /* 코인 이미지 파일 경로 */
+  background-size: cover;
+  animation: fall 6s ease-out infinite; /* 애니메이션 시간을 늘림 */
+}
+
+@keyframes fall {
+  0% {
+      top: -50px;
+      transform: rotate(0deg);
+      opacity: 1;
+
+  }
+  100% {
+      top: 100%;
+      transform: rotate(360deg);
+      opacity: 0.3;
+
+  }
+}
+
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* 로고 아래 여백 추가 */
+  }
+
+
+  nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+
+  #info {
+    font-size: 30px;
+  }
+
+  #info_mid { 
+    font-size: 20px;
+  }
+
+  #info img {
+    width: 50%;
+    height: auto;
+  }
+
+  .youth-support img{
+    width: 40%;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+  }
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 스크롤 - 카드슬라이더 */
+.slider {
+  height: 450px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(350px * 8); /* 슬라이드 개수 */
+  animation: scroll 20s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 4)); /* 슬라이드 개수 절반 */
+  }
+}
+
+.slide {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.train-card {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #dbf9d0; /* 배경 색 변경 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* 둥근 모서리 설정 */
+  transition: transform 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.train-card h2 {
+  margin: 0 0 10px;
+  padding-top: 20px;
+  padding-left: 20px; /* 패딩 추가 */
+}
+
+.train-card p {
+  margin: 0 0 20px;
+  padding-left: 20px; /* 패딩 추가 */
+  line-height: 1.8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.train-card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.train-card button:hover {
+  background-color: #45a049;
+}
+
+.train-card:hover {
+  transform: scale(1.15); /* 확대 효과 */
+  z-index: 10; /* 확대 시 앞으로 나오게 설정 */
+}
+
+/* 슬라이더 그라데이션 그림자 */
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #f6f4f2 0%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/* quiz.css */
+#quiz-container {
+  text-align: center;
+  padding: 50px;
+}
+
+#quiz-question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options li:hover {
+  background-color: #ddd;
+}
+
+.options .selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#next-btn, #next-quiz-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+#next-btn:hover, #next-quiz-button:hover {
+  background-color: #45a049;
+}
+
+#coin-container {
+  margin: 20px 0;
+}
+
+#piggy-bank {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+#coin-count {
+  font-size: 24px;
+  font-weight: bold;
+}

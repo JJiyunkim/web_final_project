@@ -1,0 +1,148 @@
+/*일반적 PC 적용*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+}
+
+body {
+  font-family: 'Pretendard-Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: #111;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* 로고와 메뉴를 좌우 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  background-color: rgb(228, 239, 229);
+  font-weight: bold;
+}
+
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* 메뉴 항목 가운데 정렬 */
+  
+}
+nav a {
+  color: #111;
+  text-decoration: none;
+  padding: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+  
+}
+
+.logo{
+    margin-left: 50px;
+    width: 200px; 
+    height: auto;
+
+}
+
+footer{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f0f0f0;
+}
+
+/* 금융 tip css */
+
+.tip {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.tip h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.tip p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 예산 설정 css */
+.container {
+  max-width: 400px; /* 예산 설정 폼의 최대 너비를 지정합니다. */
+  margin: 50px auto; /* 화면 상단과 하단에 각각 50px의 여백을 주고, 좌우는 자동으로 가운데 정렬됩니다. */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* 내용을 가운데 정렬합니다. */
+}
+
+.budget-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (min-width: 76px) and (max-width: 991px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; 
+  }
+
+
+  nav {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+
+  main {
+    padding: 30px 10px;
+  }
+
+  .tip {
+    max-width: 70%; 
+    margin: 0 auto; 
+  }
+
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px;
+  }
+}

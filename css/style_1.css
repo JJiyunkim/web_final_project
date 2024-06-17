@@ -1,0 +1,55 @@
+/*일반적 PC 적용*/
+@import url('menu.css');
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 세로 전체를 사용하도록 설정 */
+}
+
+.profile {
+  text-align: center;
+  border: 2px solid #ddd; /* 테두리 추가 */
+  padding: 20px; /* 내용과 테두리 간 여백 */
+  border-radius: 10px; /* 모서리를 둥글게 만듦 */
+}
+
+.profile img {
+  width: 200px; /* 프로필 사진의 너비 조정 */
+  height: auto; /* 높이는 자동으로 조정 */
+}
+
+#profile_info {
+  text-align: center;
+}
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* 로고 아래 여백 추가 */
+  }
+
+
+  nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+  }
+}

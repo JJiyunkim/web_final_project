@@ -1,0 +1,160 @@
+/*일반적 PC 적용*/
+@import url('menu.css');
+
+body{
+  background-color: #dbf9d0; /* 배경 색 변경 */
+
+}
+
+header {
+  background-color: white; /* 헤더 부분 배경색을 흰색으로 설정 */
+}
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* 로고 아래 여백 추가 */
+  }
+
+
+  nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+  }
+}
+
+main.tips {
+  padding: 20px;
+}
+
+.tip-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tip-header {
+  margin-bottom: 20px;
+}
+
+.tip-categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category {
+  background-color: #3a3a3a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 100px;
+  transition: background-color 0.3s;
+}
+
+.category.active,
+.category:hover {
+  background-color: #4CAF50;
+}
+
+.tip-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tip-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+}
+
+.tip-card h3 {
+  padding-bottom: 5%;
+}
+
+.tip-card p {
+  line-height: 1.6;
+}
+
+.tip-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.tip-card a:hover {
+  background-color: #45a049;
+}
+
+
+/* 모바일 및 테블릿 공통 스타일 */
+@media screen and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* 로고 아래 여백 추가 */
+  }
+
+  nav {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  nav a {
+    margin: 10px 0; /* 링크 간의 간격 조정 */
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+
+  .tip-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tip-card {
+    width: 90%;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  nav a {
+    padding: 5px 10px; /* 모바일에서 좀 더 작은 패딩 적용 */
+  }
+}
